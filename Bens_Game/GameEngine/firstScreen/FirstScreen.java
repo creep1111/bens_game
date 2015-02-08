@@ -9,12 +9,13 @@ import main.Screen;
 public class FirstScreen implements Screen {
 
 	private int x = 0;
-	private int y = 40;
+	private int y = 600;
 	
 	public void update() {
 		// TODO Auto-generated method stub
 		System.out.println("the screen works");
 		x++;
+		y--;
 	}
 
 	public void render(Graphics g) {
