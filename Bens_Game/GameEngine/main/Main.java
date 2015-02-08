@@ -3,8 +3,8 @@ package main;
 public class Main implements Runnable  {
 	
 
-	private static final int WIDTH = 640;
-	private static final int HIEGHT = 480;
+	private static final int WIDTH = 1366;
+	private static final int HIEGHT = 768;
 	private static final int FRAME_RATE = 60;
 	private int Ticks = 0;
 	private static Gui GuiObject;
