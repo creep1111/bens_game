@@ -1,7 +1,10 @@
 package main;
 
 import java.util.ArrayList;
+
 import javax.swing.JFrame;
+
+import firstScreen.FirstScreen;
 
 public class Gui extends JFrame {
 	
@@ -10,6 +13,7 @@ public class Gui extends JFrame {
 	private static ArrayList<Screen> screens = new ArrayList<Screen>();
 	private static int CurentScreen = 0;
 	private static GameCanvas Canvas;
+	public static int FirstScreenID = 0;
 
 	public Gui(int width, int height){
 		super("Ben's Game");
@@ -19,6 +23,7 @@ public class Gui extends JFrame {
 		setLocationRelativeTo(null);
 		Canvas = new GameCanvas();
 		add(Canvas);
+		screens.add(new FirstScreen());
 		setVisible(true);
 		Canvas.createBufferStrategy(2);
 	}

@@ -26,8 +26,8 @@ public class Main implements Runnable  {
 		// TODO Auto-generated method stub
 		try{
 			while(Running){
-				//Tick();
-				//Render();
+				Tick();
+				Render();
 				try{
 					Thread.sleep(1000 / FRAME_RATE);
 				}catch(Exception e){
