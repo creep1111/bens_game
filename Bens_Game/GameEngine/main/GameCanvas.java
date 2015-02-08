@@ -13,7 +13,7 @@ public class GameCanvas extends Canvas {
 	
 	public GameCanvas(){
 		setIgnoreRepaint(true);
-		setBackground(Color.BLACK);
+		setBackground(Color.MAGENTA);
 	}
 	
 	public void paint(Graphics g){
